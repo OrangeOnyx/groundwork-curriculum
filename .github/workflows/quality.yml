@@ -1,0 +1,40 @@
+name: Quality checks
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Run in strict mode (warnings become failures)"
+        required: false
+        default: "false"
+
+jobs:
+  quality:
+    name: Voice, links, coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run quality checker
+        run: |
+          if [ "${{ github.event.inputs.strict }}" = "true" ]; then
+            python3 .github/scripts/quality_check.py --strict
+          else
+            python3 .github/scripts/quality_check.py
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "See job log for the full quality report."
+          echo "Warnings are advisory; only broken relative links fail the build."
+          echo "Run 'python3 .github/scripts/quality_check.py' locally before pushing."

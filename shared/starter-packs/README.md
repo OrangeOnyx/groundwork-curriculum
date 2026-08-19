@@ -23,7 +23,23 @@ The eight packs:
 | [grok](./grok) | Grok custom instructions | Web UI settings |
 | [gemini](./gemini) | Gemini Gems | Web UI |
 
-## How to actually use these
+## Fastest path: bootstrap.sh
+
+For Cursor and Claude Code (the two IDE/CLI targets), one command installs the right files in the right places:
+
+```bash
+# from your project root, using a checkout of this repo:
+bash /path/to/ai-fluency-program/shared/starter-packs/bootstrap.sh
+
+# or without a checkout:
+bash <(curl -sL https://raw.githubusercontent.com/OrangeOnyx/ai-fluency-program/master/shared/starter-packs/bootstrap.sh)
+```
+
+It auto-detects Cursor (via `.cursor/` or `.cursorrules`) and Claude Code (via `.claude/` or `CLAUDE.md`). For web-based tools (Claude.ai, ChatGPT, Perplexity, Grok, Gemini, Anthropic Console) it prints paste-ready contents to stdout. Any existing files are backed up with a `.bak.<timestamp>` suffix before being overwritten — the script is idempotent and never deletes.
+
+See `bash bootstrap.sh --help` for flags (`--target`, `--print`, `--dry-run`, `--list`).
+
+## Manual: how to actually use these
 
 **Step 1 — Pick one platform to start.** Don't try to configure all 8 at once. Start with the one you use most, get value from it, then port the pattern.
 

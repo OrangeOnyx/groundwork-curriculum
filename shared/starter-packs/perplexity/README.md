@@ -37,5 +37,5 @@ Create a Project, then paste `project-context-template.md` as the project descri
 
 ## Related program modules
 
-- [`level-1-foundations`](../../../level-1-foundations) — the base fluency track
+- [Level 1 — Essentials](../../../level-1-essentials/) — the base fluency track
 - [`level-2-intermediate/individual/01-agent-architectures/agents-are-folders.md`](../../../level-2-intermediate/individual/01-agent-architectures/agents-are-folders.md) — why the skill file IS the agent

@@ -192,4 +192,4 @@ But most real-world agent workflows — the ones this program teaches — are se
 - [ICM Folder Structure — LLM Wiki](https://blog.imfsoftware.com/llm-wiki/docs/sources/icm-folder-structure/)
 - [Interpretable Context Methodology — AP0110 Wiki](https://ap0110.org/wiki/interpretable-context-methodology/)
 - Related in this program: [`../13-combine-two-agents`](../13-combine-two-agents) (composition through folders)
-- Related in this program: [`../../shared/starter-packs`](../../shared/starter-packs) (folder templates for 8 platforms)
+- Related in this program: [starter-packs](../../../shared/starter-packs/) (folder templates for 8 platforms)

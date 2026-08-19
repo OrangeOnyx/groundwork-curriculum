@@ -29,6 +29,10 @@ See `LEVEL-MAP.md` for the visual map.
 - **Start doing:** `level-1-essentials/00-start-here/30-day-starter-sequence.md`
 - **Set up your tools:** [`shared/starter-packs/`](shared/starter-packs) — ready-to-paste custom instructions for Claude, ChatGPT, Perplexity, Claude Code, Cursor, Grok, Gemini, and the Anthropic API
 
+## Not sure this is the right program for you?
+
+Read [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md). AI Fluency assumes your files, identity, and knowledge are already in a shape AI can use. If they aren't yet, the [Groundwork program](https://groundwork-three-psi.vercel.app) is the readiness prerequisite. Both are free to start; both are open. Neither gates its content.
+
 ## The ELI10 layer
 
 Every technical section in this program has a matching plain-language companion in the `eli10/` folder at that level. Think of it as the same information explained to a curious 10-year-old — no jargon, real analogies, why-it-matters framing.

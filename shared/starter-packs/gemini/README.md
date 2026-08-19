@@ -31,5 +31,5 @@ For [Gemini](https://gemini.google.com) — Google's assistant. Gemini's persist
 
 ## Related
 
-- [`level-1-foundations`](../../../level-1-foundations)
+- [Level 1 — Essentials](../../../level-1-essentials/)
 - Other packs in this directory

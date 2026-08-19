@@ -28,8 +28,18 @@ You've moved to Level 3 when:
 
 - **`individual/`** — 12 modules for personal capability
 - **`company/`** — 8 modules for org-level capability
+- **`repos/`** — 4 public GitHub repos backing the core walkthroughs — [read the overview](repos/README.md)
 - **`shared/`** — templates and briefs
 - **`eli10/`** — plain-language companions for each big concept
+
+## Working code repositories
+
+| Repo | For walkthrough | Domain |
+|------|-----------------|--------|
+| [`lease-abstractor`](https://github.com/OrangeOnyx/lease-abstractor) | `02-build-first-agent` | Real estate |
+| [`support-triage-agent`](https://github.com/OrangeOnyx/support-triage-agent) | `03-build-second-agent` | Any (SaaS, e-commerce, services, agency) |
+| [`diligence-agent`](https://github.com/OrangeOnyx/diligence-agent) | `04-build-third-agent` | Any (M&A, vendor, CRE, contracts) |
+| [`belle-mcp-server`](https://github.com/OrangeOnyx/belle-mcp-server) | `05-mcp-server` | Real estate |
 
 ## How to work Level 2
 

@@ -1,0 +1,33 @@
+---
+description: TypeScript conventions for this repo
+globs: ["**/*.ts", "**/*.tsx"]
+alwaysApply: false
+---
+
+# TypeScript
+
+- **Strict mode.** No `any`. Use `unknown` and narrow.
+- **`import type`** for type-only imports.
+- **Zod at the edges.** Validate anything from HTTP, env, or LLM outputs.
+- **Discriminated unions** for typed errors: `{ ok: true, data } | { ok: false, code, message }`.
+- **No default exports** in library code. Named exports only. (Framework files like Next.js pages/routes are the exception.)
+- **`node:` prefix** for Node builtins: `import { readFile } from 'node:fs/promises'`.
+
+# Error handling
+
+- Custom `AppError` class with a discriminated `code` field
+- Never `catch (e: any)` — use `catch (e) { if (e instanceof AppError) ... }`
+- Never swallow errors silently — log or re-throw
+
+# Tests
+
+- Filename: `foo.ts` → `foo.test.ts` in the same directory
+- Use Vitest unless the project uses Jest already
+- One `describe` per module, one `it` per behavior
+- Test the behavior, not the implementation
+
+# What NOT to do
+
+- No `console.log` in shipped code — use the project's logger
+- No `Function` type — use a specific signature
+- No `enum` — use a const object with `as const` or a string union

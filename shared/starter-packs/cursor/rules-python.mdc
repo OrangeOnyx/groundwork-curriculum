@@ -1,0 +1,40 @@
+---
+description: Python conventions for this repo
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
+# Python
+
+- **Type hints on every function signature.** `-> None` when returning nothing. `list[str]`, not `List[str]` (3.9+).
+- **Pydantic for external data.** HTTP bodies, env vars, LLM outputs.
+- **Dataclasses (or Pydantic) for internal shapes.** No dict-typed shapes passed around.
+- **`pathlib.Path` for filesystem paths.** No string paths.
+- **f-strings for formatting.** No `.format()`, no `%`.
+- **Async where it matters.** Not everywhere by default.
+
+# Imports
+
+- Standard library first, then third-party, then local
+- No wildcard imports
+- No unused imports
+
+# Error handling
+
+- Custom exception classes with clear names
+- Never `except Exception:` — catch specific exceptions
+- Never `except:` without an exception type
+- Include enough context in the exception message to debug from a log line alone
+
+# Tests
+
+- Filename: `foo.py` → `test_foo.py` in `tests/`
+- Use pytest, not unittest
+- Fixtures over setUp/tearDown
+- Test the behavior, not the implementation
+
+# What NOT to do
+
+- No mutable default arguments (`def f(x=[])`)
+- No `print()` in shipped code — use logging
+- No global state modified at import time

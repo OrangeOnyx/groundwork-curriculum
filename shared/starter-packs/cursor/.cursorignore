@@ -1,0 +1,43 @@
+# Build outputs
+dist/
+build/
+.next/
+out/
+.turbo/
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Generated files
+*.min.js
+*.min.css
+*.map
+coverage/
+
+# Large data files
+*.parquet
+*.arrow
+*.bin
+
+# Secrets (belt-and-suspenders — should already be in .gitignore)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/settings.json
+
+# Vendor code Cursor shouldn't try to modify
+vendor/
+third_party/
+
+# Logs
+*.log
+logs/

@@ -27,6 +27,7 @@ See `LEVEL-MAP.md` for the visual map.
 - **Start reading:** `shared/cover-letter/short-wake-up-letter.md` (5 min)
 - **Get convinced:** `shared/cover-letter/field-guide-manifesto.md` (30 min)
 - **Start doing:** `level-1-essentials/00-start-here/30-day-starter-sequence.md`
+- **Set up your tools:** [`shared/starter-packs/`](shared/starter-packs) — ready-to-paste custom instructions for Claude, ChatGPT, Perplexity, Claude Code, Cursor, Grok, Gemini, and the Anthropic API
 
 ## The ELI10 layer
 

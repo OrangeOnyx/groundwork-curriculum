@@ -1,0 +1,37 @@
+---
+description: React and Next.js patterns for this repo
+globs: ["**/*.tsx", "**/*.jsx"]
+alwaysApply: false
+---
+
+# React
+
+- **Server Components by default in Next.js App Router.** Add `'use client'` only when you need state, effects, event handlers, or browser APIs.
+- **Composition over configuration.** Prefer children + composition to boolean prop explosions.
+- **One component per file.** Filename matches the export.
+- **Props typed with a `<Component>Props` interface** immediately above the component.
+
+# State
+
+- **`useState` for local, `useReducer` for complex.** No global state library unless the app genuinely needs one.
+- **Server state via a data-fetching library** (React Query, SWR) — not `useEffect` + `fetch`.
+- **URL state via searchParams**, not local state — for anything a user might link to or bookmark.
+
+# Forms
+
+- **Controlled components** for anything with validation.
+- **react-hook-form + Zod** for anything non-trivial.
+- **Error messages are prose**, not codes: "Enter your email" not "email_required".
+
+# Accessibility
+
+- **Semantic HTML first.** `<button>` not `<div onClick>`.
+- **Every input has a label.** Screen readers, not placeholders, carry the label.
+- **Focus states are visible.** Don't strip outlines without adding a replacement.
+
+# What NOT to do
+
+- No inline styles unless truly dynamic
+- No `dangerouslySetInnerHTML` unless the input is provably safe
+- No `useEffect` for derived state — compute it in the render
+- No `key={index}` on lists that reorder

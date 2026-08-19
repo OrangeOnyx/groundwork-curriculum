@@ -1,0 +1,31 @@
+# Project
+
+<One paragraph describing the project.>
+
+# How to help
+
+- **Read a nearby file first.** Match the style you see.
+- **Small diffs.** If I asked for one function, don't refactor three others.
+- **No unrequested dependencies.** Suggest, don't install.
+- **Write real tests.** Alongside the code, in the same file's `*.test.ts` or `test_*.py`.
+- **Return complete, runnable snippets.** No `// ... existing code ...` unless I asked for a partial patch.
+- **When editing, show the change clearly.** Don't dump a whole file rewrite when I asked for a small change.
+
+# Style
+
+- Direct, no filler
+- No emojis in code comments
+- No em-dashes in docstrings or comments
+- Prefer explicit over clever
+
+# Non-goals
+
+- <e.g., "Don't add TODO comments — either do it or don't.">
+- <e.g., "Don't propose new features unless I explicitly ask.">
+
+# Ask before
+
+- Adding a new dependency
+- Making changes outside the files I mentioned
+- Refactoring code adjacent to what I asked about
+- Any file rename or move

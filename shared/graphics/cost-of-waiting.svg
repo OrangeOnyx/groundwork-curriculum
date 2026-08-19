@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="ui-sans-serif, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0d10"/><stop offset="1" stop-color="#141820"/>
+    </linearGradient>
+    <linearGradient id="cline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="wline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg2)"/>
+
+  <text x="60" y="70" fill="#f5f5f5" font-size="34" font-weight="700">The Cost of Waiting</text>
+  <text x="60" y="100" fill="#9ca3af" font-size="16">Cumulative hours saved vs lost, 12 months, compared to a baseline knowledge worker</text>
+
+  <!-- Chart area -->
+  <g transform="translate(90,150)">
+    <!-- axes -->
+    <line x1="60" y1="0" x2="60" y2="440" stroke="#374151" stroke-width="1.5"/>
+    <line x1="60" y1="440" x2="1050" y2="440" stroke="#374151" stroke-width="1.5"/>
+
+    <!-- y-axis labels -->
+    <text x="50" y="10" text-anchor="end" fill="#9ca3af" font-size="12">+600h</text>
+    <text x="50" y="115" text-anchor="end" fill="#9ca3af" font-size="12">+300h</text>
+    <text x="50" y="220" text-anchor="end" fill="#9ca3af" font-size="12">0</text>
+    <text x="50" y="325" text-anchor="end" fill="#9ca3af" font-size="12">-300h</text>
+    <text x="50" y="430" text-anchor="end" fill="#9ca3af" font-size="12">-600h</text>
+
+    <line x1="60" y1="220" x2="1050" y2="220" stroke="#374151" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- x-axis labels -->
+    <g fill="#9ca3af" font-size="12" text-anchor="middle">
+      <text x="60" y="465">M1</text>
+      <text x="225" y="465">M3</text>
+      <text x="390" y="465">M5</text>
+      <text x="555" y="465">M7</text>
+      <text x="720" y="465">M9</text>
+      <text x="885" y="465">M11</text>
+      <text x="1050" y="465">M12</text>
+    </g>
+
+    <!-- Adopter curve — accelerating -->
+    <path d="M 60 220 Q 250 210, 390 180 T 720 90 T 1050 15" stroke="url(#cline)" stroke-width="4" fill="none"/>
+    <circle cx="1050" cy="15" r="7" fill="#22c55e"/>
+    <text x="1060" y="20" fill="#22c55e" font-size="14" font-weight="700">+580h saved</text>
+
+    <!-- Waiter curve — steady loss -->
+    <path d="M 60 220 Q 250 240, 390 275 T 720 355 T 1050 435" stroke="url(#wline)" stroke-width="4" fill="none"/>
+    <circle cx="1050" cy="435" r="7" fill="#ef4444"/>
+    <text x="1060" y="440" fill="#ef4444" font-size="14" font-weight="700">-560h behind</text>
+
+    <!-- Labels -->
+    <text x="80" y="200" fill="#22c55e" font-size="14" font-weight="700">Started this year — compounding</text>
+    <text x="80" y="255" fill="#ef4444" font-size="14" font-weight="700">Waited — falling behind</text>
+  </g>
+
+  <!-- Bottom callouts -->
+  <g transform="translate(90,620)">
+    <text x="0" y="0" fill="#f5f5f5" font-size="14" font-weight="700">Gap at 12 months: ~1,140 hours</text>
+    <text x="0" y="22" fill="#9ca3af" font-size="12">Equivalent to ~28 work weeks — most of a person-year — of relative productivity difference between the two curves.</text>
+  </g>
+</svg>

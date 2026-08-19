@@ -1,0 +1,10 @@
+# Agent Lifecycle
+
+1. **Brief:** define user, decision, non-goals, data, tools, risk, and success metric. 2. **Prototype:** use synthetic or sandboxed data; no external side effects. 3. **Offline evaluation:** establish correctness, safety, retrieval, latency, and cost baselines. 4. **Review:** approve data/tool scope and rollout plan. 5. **Shadow:** run against live inputs without acting; compare with staff outcomes. 6. **Limited launch:** feature flag, narrow users, required human review. 7. **Operate:** monitor, sample outputs, refresh evals, track drift and costs. 8. **Retire:** revoke tools, archive traces under retention policy, and remove stale indexes.
+
+Define exit criteria at every stage. A shadow agent moves forward only if it meets slice-level metrics, not an average score. An operational agent re-enters review after a material incident, model migration, policy change, or expansion of permissions.
+
+Lifecycle state belongs in the agent registry and visible UI. Users should know whether they are seeing an experimental draft, a human-approved recommendation, or an automated action.
+
+## Operating standard
+Make this practice operational, not aspirational. Assign one directly responsible owner and name the decision they can make without another meeting. Put the key measure, threshold, and review cadence in the owning team’s regular operating rhythm. A change to model, prompt, data scope, retrieval index, tool permission, or policy should be recorded with its expected impact and a rollback path. Preserve enough trace information to explain an individual bad outcome without exposing more tenant or deal data than necessary. Review a small sample of real runs with the people doing the work; dashboards reveal trends, but operators reveal missing context. When the rule is violated, capture the incident, contain impact, add an eval or control, and update this document if the standard itself was unclear. The point is repeatable judgment under real workload, not a one-time compliance exercise.

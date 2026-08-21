@@ -1,8 +1,11 @@
-# AI Fluency Program
+# Groundwork Curriculum
+
+> **Part of [Groundwork](https://groundwork-three-psi.vercel.app)** — the AI Readiness system by Adam Abdalla. Free. Ungated. MIT.
+
 
 ![AI Fluency Program](shared/graphics/hero-cover.png)
 
-A five-level program to take a person or a company from AI novice to AI operator to AI practitioner.
+The free, ungated curriculum layer of Groundwork. A five-level path from AI novice to AI operator to AI practitioner.
 
 **Two tracks at every level:** individual and company.
 **Two voices at every level:** the standard docs and an ELI10 companion.
@@ -31,7 +34,7 @@ See `LEVEL-MAP.md` for the visual map.
 
 ## Not sure this is the right program for you?
 
-Read [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md). AI Fluency assumes your files, identity, and knowledge are already in a shape AI can use. If they aren't yet, the [Groundwork program](https://groundwork-three-psi.vercel.app) is the readiness prerequisite. Both are free to start; both are open. Neither gates its content.
+Read [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md). The Groundwork Curriculum assumes your files, identity, and knowledge are already in a shape AI can use. If they aren't yet, the [Groundwork program](https://groundwork-three-psi.vercel.app) is the readiness prerequisite. Both are free to start; both are open. Neither gates its content.
 
 ## The ELI10 layer
 

@@ -20,7 +20,7 @@ Run through this before every commit. The CI workflow (`.github/workflows/qualit
 
 - [ ] **[FAIL]** No broken relative Markdown links (all `[text](file.md)` targets exist)
 - [ ] **[WARN]** New files under a module directory are referenced from that module's README
-- [ ] External links to Groundwork use `https://groundwork-three-psi.vercel.app`
+- [ ] External links to Groundwork use `https://groundwork.adamabdalla.com`
 
 ## Any-level entry
 

@@ -2,7 +2,7 @@
 
 **TL;DR** — Groundwork is the **readiness** program. AI Fluency is the **capability** program. Groundwork gets your data, identity, and knowledge in order so AI can work on your real information. AI Fluency teaches you to build the agents, tools, and evaluation systems that run on top of that foundation. They are sequential, not competing. Neither is gated. You can start in either program at any layer or level that fits where you already are.
 
-- Groundwork: [groundwork-three-psi.vercel.app](https://groundwork-three-psi.vercel.app)
+- Groundwork: [groundwork.adamabdalla.com](https://groundwork.adamabdalla.com)
 - AI Fluency: this repo — [README.md](README.md)
 
 ---

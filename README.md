@@ -1,6 +1,6 @@
 # Groundwork Curriculum
 
-> **Part of [Groundwork](https://groundwork-three-psi.vercel.app)** — the AI Readiness system by Adam Abdalla. Free. Ungated. MIT.
+> **Part of [Groundwork](https://groundwork.adamabdalla.com)** — the AI Readiness system by Adam Abdalla. Free. Ungated. MIT.
 
 
 ![AI Fluency Program](shared/graphics/hero-cover.png)
@@ -34,7 +34,7 @@ See `LEVEL-MAP.md` for the visual map.
 
 ## Not sure this is the right program for you?
 
-Read [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md). The Groundwork Curriculum assumes your files, identity, and knowledge are already in a shape AI can use. If they aren't yet, the [Groundwork program](https://groundwork-three-psi.vercel.app) is the readiness prerequisite. Both are free to start; both are open. Neither gates its content.
+Read [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md). The Groundwork Curriculum assumes your files, identity, and knowledge are already in a shape AI can use. If they aren't yet, the [Groundwork program](https://groundwork.adamabdalla.com) is the readiness prerequisite. Both are free to start; both are open. Neither gates its content.
 
 ## The ELI10 layer
 

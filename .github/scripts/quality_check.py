@@ -59,7 +59,7 @@ SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "__pycache__", ".bak"}
 # GitHub URL pattern that mentions OrangeOnyx (companion repo links) is
 # always allowed no matter where it appears.
 URL_ALLOWLIST_RE = re.compile(
-    r"https?://[^\s\)]*(?:github\.com/OrangeOnyx|groundwork-three-psi)[^\s\)]*",
+    r"https?://[^\s\)]*(?:github\.com/OrangeOnyx|groundwork\.adamabdalla\.com)[^\s\)]*",
     re.IGNORECASE,
 )
 

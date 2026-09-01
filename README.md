@@ -7,7 +7,7 @@
 
 The free, ungated curriculum arm of Groundwork. A five-level path from AI novice to AI builder to AI contributor.
 
-**How this relates to the Groundwork site:** the [site](https://groundwork.adamabdalla.com) is the readiness doctrine, six layers you build once for your business. This Curriculum is the capability path, five levels of skill you climb yourself. Different axes, one system. Full mapping: [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md).
+**How this relates to the Groundwork site:** the [site](https://groundwork.adamabdalla.com) is the readiness doctrine, six standing orders you build once for your business. This Curriculum is the capability path, five levels of skill you climb yourself. Different axes, one system. Full mapping: [GROUNDWORK-AND-FLUENCY.md](GROUNDWORK-AND-FLUENCY.md).
 
 **Two tracks at every level:** individual and company.
 **Two voices at every level:** the standard docs and an ELI10 companion.
